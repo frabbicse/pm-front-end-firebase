@@ -7,6 +7,11 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from '../environments/environment';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -15,7 +20,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule, // Only required for auth features,
     AngularFireStorageModule, // Only required for storage features
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, DashboardComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
